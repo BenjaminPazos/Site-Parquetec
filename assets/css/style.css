@@ -251,7 +251,7 @@ header .menu .navegacao .lupa {
 }
 
 .ambiente-ideal .ambiente:hover .conecte {
-    
+
     transform: scale(1.1);
 }
 
@@ -261,48 +261,216 @@ header .menu .navegacao .lupa {
     text-decoration: none;
     color: #fff;
 }
-.videos-pti{
+
+.videos-pti {
     background-color: #f9f9f9;
     padding: 50px 0 50px 0;
 }
-.videos-pti .conteiner{
+
+.videos-pti .conteiner {
     margin-top: 20px;
 }
+
 .videos-pti .videos {
     display: flex;
 }
-.videos-pti .videos img{
+
+.videos-pti .videos img {
     border-radius: 10px;
     width: 330px;
     height: 220px;
+    
 }
-.videos-pti .videos .video{
+
+.videos-pti .videos .video {
+    
     flex-basis: 33%;
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
 }
-.videos-pti .videos .video{
+
+.videos-pti .videos .video {
     
     font-size: 17px;
     font-weight: 500;
 }
-footer{
-    background-color: red;
 
+
+
+
+footer {
+    background: linear-gradient(
+        120deg,
+        #bd2342,
+        #9c5b4b,
+        #c9b000
+    );
 }
-.footImagem img{
+
+.footImagem img {
     width: 100%;
-    
 }
-.footImg{
+
+.footImg {
     width: 100%;
     margin-bottom: 80px;
 }
-footer .linha1{
+
+footer .linha1 {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 40px 40px;
+    gap: 40px;
+   
 }
-footer .linha1 img{
-    height: 100px;
+
+footer .linha1 img {
+    height: 150px;
+    
+}
+footer .linha1 .newsletter-form {
+  display: flex;
+  max-width: 500px;
+  max-height: 70px;
+  width: 100%;
+}
+
+footer .linha1 .email-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+      background-color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  
+  /* Arredonda apenas o lado esquerdo */
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+footer .linha1 .email-input::placeholder {
+  color: white;
+}
+
+
+footer .linha1 .submit-button {
+  background-color: #1573b6;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  font-size: 16px;
+  
+  /* Arredonda apenas o lado direito */
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition: 0.3s;
+}
+
+
+footer .linha1 .submit-button:hover {
+  background-color: #099C61 ;
+}
+footer .linha1 p{
+    color: white;
+    font-size: large;
+}
+footer .linha2{
+    padding: 0 40px 40px 40px;
+    display: flex;
+}
+footer .linha2 img {
+    height: 150px;
+}
+footer .linha2 table {
+    margin-left: 400px;
+    color: white;
+    font-size: 20px;
+}
+footer .linha2 table td, th {
+    padding: 5px 40px 5px 0px;
+     white-space: nowrap; 
+     transition: 0.3s;
+}
+/*  
+    Professor eu tentei botar uma linha assim que o mouse passa por cima
+    porém eu não sei oq tá acontecendo que fica com 2 linhas 
+    td:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer; 
+    } */
+footer .linha3 {
+    padding: 0 40px 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .linha3 .redes-sociais {
+    padding-left: 170px;
+    display: flex;
+    gap: 10px;
+}
+
+footer .linha3 .redes-sociais a {
+    transition: 0.3s;
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+footer .linha3 .redes-sociais i {
+    color: white;
+    font-size: 35px;
+}
+
+footer .linha3 .redes-sociais a:hover {
+    scale: 0.8;
+}
+
+footer .linha3 .voltar-topo {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+
+    padding: 20px 45px;
+
+    border-radius: 12px;
+    text-decoration: none;
+
+    font-size: 20px;
+}
+footer .linha4 {
+   padding: 0 40px 40px 40px;
+}
+
+footer .linha4 .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .linha4 a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer .linha4 a:hover{
+    border-bottom: white 2px solid;
+}
+footer .linha5 {
+    padding: 25px 15px;
+    
+}
+footer .linha5 p{
+    color: white;
+    text-align: center;
 }
